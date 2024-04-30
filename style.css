@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass";
+  background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+  margin: 0 4.8rem;
+}
+
+.rating-component {
+  max-width: 40rem;
+  height: 40rem;
+  background-color: hsl(213, 19%, 18%);
+  margin: 20rem auto;
+  padding: 3rem;
+  border-radius: 2.4rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.justify-align-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-star {
+  fill: hsl(25, 97%, 53%);
+  width: 1.6rem;
+  height: 1.6rem;
+
+  background-color: hsl(219, 11%, 24%);
+  padding: 1.2rem;
+  border-radius: 10rem;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.btn {
+  border: none;
+  border-radius: 2.4rem;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.rate {
+  border: none;
+  border-radius: 9999px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(219, 11%, 24%);
+  color: hsl(217, 12%, 63%);
+  width: 5rem;
+  height: 5rem;
+  /* !! baraye bardashtan radio btn */
+  appearance: none;
+  cursor: pointer;
+  /* !! baraye shomare gozari radio button ha 1 ta 5 */
+  counter-increment: count 1;
+  transition: all 0.3s;
+}
+
+/* !! baraye shomare gozari radio button ha*/
+.rate::before {
+  content: counter(count, decimal);
+}
+
+.rate:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.rate:checked {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.rate-holder {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn-submit {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  margin-top: 0.8rem;
+  transition: all 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Thank you part */
+
+.selected-rating {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(219, 11%, 24%);
+  padding-bottom: 0.2rem;
+  padding-top: 0.4rem;
+  text-align: center;
+  width: 55%;
+  border-radius: 3rem;
+  font-size: 1.4em;
+}
+.thankyou-header {
+  font-size: 2.4rem;
+  color: hsl(0, 0%, 100%);
+}
+.thankyou-text {
+  text-align: center;
+}
