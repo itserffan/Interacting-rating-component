@@ -42,7 +42,6 @@ body {
   fill: hsl(25, 97%, 53%);
   width: 1.6rem;
   height: 1.6rem;
-
   background-color: hsl(219, 11%, 24%);
   padding: 1.2rem;
   border-radius: 10rem;
@@ -76,8 +75,8 @@ p {
   align-items: center;
   background-color: hsl(219, 11%, 24%);
   color: hsl(217, 12%, 63%);
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   /* !! baraye bardashtan radio btn */
   appearance: none;
   cursor: pointer;
@@ -89,6 +88,7 @@ p {
 /* !! baraye shomare gozari radio button ha*/
 .rate::before {
   content: counter(count, decimal);
+  font-size: 1.8rem;
 }
 
 .rate:hover {
@@ -102,7 +102,7 @@ p {
 }
 
 .rate-holder {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,6 +116,7 @@ p {
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
   margin-top: 0.8rem;
+  /* margin-bottom: 2rem; */
   transition: all 0.3s;
 }
 
