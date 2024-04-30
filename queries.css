@@ -1,17 +1,24 @@
-@media (max-width: 28.45em) {
+@media (max-width: 30.63em) {
   html {
     font-size: 56.25%;
   }
 }
 
-@media (max-width: 25em) {
+@media (max-width: 26.6em) {
+  .rate {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media (max-width: 24.5em) {
   html {
     font-size: 50%;
   }
 }
 
-@media (max-width: 23.5em) {
+@media (max-width: 21.25em) {
   html {
-    font-size: 45%;
+    font-size: 46%;
   }
 }
