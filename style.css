@@ -77,15 +77,12 @@ p {
   color: hsl(217, 12%, 63%);
   width: 6rem;
   height: 6rem;
-  /* !! baraye bardashtan radio btn */
   appearance: none;
   cursor: pointer;
-  /* !! baraye shomare gozari radio button ha 1 ta 5 */
   counter-increment: count 1;
   transition: all 0.3s;
 }
 
-/* !! baraye shomare gozari radio button ha*/
 .rate::before {
   content: counter(count, decimal);
   font-size: 1.8rem;
