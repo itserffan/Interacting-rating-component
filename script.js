@@ -1,22 +1,26 @@
 "use strict";
 
-const btnSubmit = document.querySelector(".btn-submit");
-const ratingPart = document.getElementById("rating-part");
-const thankyouPart = document.getElementById("thankyou-part");
-const btnRating = document.querySelectorAll(".rate");
-const selectedRatingEl = document.querySelector(".selected-rating");
+const btn = document.querySelectorAll(".btn");
+const icon = document.querySelectorAll(".icon");
+const answer = document.querySelectorAll(".hide-answer");
+const question = document.querySelectorAll(".question");
 
-const valueCheck = function () {
-  let value;
-  for (let i = 0; i < btnRating.length; i++) {
-    if (btnRating[i].value && btnRating[i].checked) value = btnRating[i].value;
-  }
-  selectedRatingEl.textContent = `You selected ${value} out of 5`;
-};
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", function () {
+    btn[i].classList.toggle("btn-open");
+    btn[i].classList.toggle("btn-close");
+    icon[i].classList.toggle("icon-close");
+    icon[i].classList.toggle("icon-open");
+    answer[i].classList.toggle("hide-answer");
+    question[i].classList.toggle("question-selected");
+  });
 
-btnSubmit.addEventListener("click", function (event) {
-  event.preventDefault();
-  ratingPart.classList.toggle("hidden");
-  thankyouPart.classList.toggle("hidden");
-  valueCheck();
-});
+  question[i].addEventListener("click", function () {
+    btn[i].classList.toggle("btn-open");
+    btn[i].classList.toggle("btn-close");
+    icon[i].classList.toggle("icon-close");
+    icon[i].classList.toggle("icon-open");
+    answer[i].classList.toggle("hide-answer");
+    question[i].classList.toggle("question-selected");
+  });
+}
