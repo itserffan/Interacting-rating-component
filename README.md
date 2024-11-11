@@ -40,5 +40,5 @@ In this project I learnd how to style radio buttons and how to get values of rad
 
 ## Author
 
-- Frontend Mentor - [@erfansoleimanii](https://www.frontendmentor.io/profile/erfansoleimanii)
-- Twitter - [@itserffan](https://www.twitter.com/itserffan)
+- Frontend Mentor - [@erfansoleimanii](https://www.frontendmentor.io/profile/itserffan)
+- GitHub - [@itserffan](https://github.com/itserffan)
